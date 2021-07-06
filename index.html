@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: white;
+        }
+
+        .container-element{
+            margin: auto;
+            display: block;
+            cursor: pointer;;
+        }
+        #first{
+            height: 400px;
+            width: 400px;
+            border: 1px solid red;
+        }
+        #second{
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 360px;
+            width: 360px;
+            border: 1px solid blue;
+        }
+        #third{
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 320px;
+            width: 320px;
+            border: 1px solid green;
+        }
+        #fourth{
+            margin-top: 20px;
+            margin-left: 20px;
+            height: 280px;
+            width: 280px;
+            border: 1px solid yellow;
+        }
+
+        #logs{
+            margin: auto;
+            height: 400px;
+            width: 600px;
+            overflow: auto;
+            background: grey;
+            color: white;
+            padding: 20px;
+        }
+
+        .logs-container{
+            width: fit-content;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" title="First Element" class="container-element">
+        <div id="second" title="Second Element"  class="container-element">
+            <div id="third" title="Third Element"  class="container-element">
+                <div id="fourth" title="Fourth Element"  class="container-element">
+                    <span>Click Me!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container-element logs-container">
+        <span>Logs go here</span>
+        <button id="clear">Clear</button><br><br>
+        <div id="logs"></div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
